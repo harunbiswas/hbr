@@ -1,0 +1,129 @@
+// basic styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+html,
+body {
+  font-size: 10px;
+}
+
+body {
+  font-family: $font-roboto;
+  background-color: $color-primary;
+  color: $color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: $font-sans;
+  color: $color-hilight;
+}
+
+h1 {
+  font-size: $font-xl;
+}
+
+h2 {
+  font-size: $font-lg;
+}
+
+h3 {
+  font-size: $font-md;
+}
+
+p,
+small,
+span,
+strong,
+a {
+  font-size: $font-xs;
+  color: $color-text;
+  font-size: $font-sm;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+
+  &:active,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.body-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0;
+
+  &-item {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: $border;
+    border-radius: 5rem;
+    border-width: 2px;
+    transition: 0.4s;
+
+    &:hover {
+      border-color: $color-secondary;
+
+      a {
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 6rem;
+  color: $color-hilight;
+  border: 2px solid $color-secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  background-color: $color-secondary;
+  gap: 0.8rem;
+  font-size: $font-md;
+  font-weight: 700;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: transparent;
+    text-decoration: none;
+  }
+}
