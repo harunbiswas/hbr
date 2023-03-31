@@ -1,0 +1,19 @@
+.home {
+  .introduce {
+    h1 {
+      font-size: 7.8rem;
+      font-weight: 400;
+
+      span {
+        font-size: 7.8rem;
+        color: $color-secondary;
+        font-weight: 600;
+      }
+    }
+
+    .text {
+      padding: 2rem 0;
+      line-height: 3rem;
+    }
+  }
+}

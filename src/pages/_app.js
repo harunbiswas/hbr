@@ -1,5 +1,6 @@
 import NavMenu from "@/components/header/NavMenu";
 import SideMenu from "@/components/header/SideMenu";
+import Profile from "@/components/Profile";
 import Head from "next/head";
 import "../styles/style.scss";
 
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
+      <Profile />
       <SideMenu />
       <NavMenu />
     </>
