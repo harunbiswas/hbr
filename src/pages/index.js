@@ -3,7 +3,8 @@ import Title from "@/components/Title";
 import RotedBtn from "@/components/RotedBtn";
 import { BiHome } from "react-icons/bi";
 import Instraction from "@/components/section/Instraction";
-import About from "../components/About";
+import About from "../components/section/About";
+import Resume from "@/components/section/Resume";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <main className="home">
         <Instraction />
         <About />
+        <Resume />
       </main>
     </>
   );

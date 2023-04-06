@@ -47,6 +47,7 @@ a {
   font-size: $font-xs;
   color: $color-text;
   font-size: $font-sm;
+  line-height: 2.5rem;
 }
 
 ul {
@@ -133,7 +134,7 @@ section {
 }
 
 #__next {
-  max-width: 1040px;
+  max-width: 840px;
   margin-left: 30rem;
 }
 
@@ -207,7 +208,7 @@ section {
     p {
       line-height: 2.5rem;
       text-transform: uppercase;
-      padding-top: 1rem;
+      padding-top: 2rem;
     }
   }
 
@@ -215,5 +216,17 @@ section {
     color: $color-secondary;
     font-size: 6.4rem;
     font-weight: 400;
+  }
+}
+
+
+.title-main {
+  font-size: 6.4rem;
+  font-weight: 400;
+  padding-bottom: 3rem;
+  
+  span {
+    color: $color-secondary;
+    font-size: 6.4rem;
   }
 }

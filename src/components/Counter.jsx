@@ -2,7 +2,7 @@ export default function Counter(){
     const counterData=[
         {
             name: "Years of Expreience",
-            count: 3
+            count: new Date().getFullYear() - 2020
         },
         {
             name: "Projects Complated",
