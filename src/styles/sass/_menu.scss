@@ -1,7 +1,7 @@
 .nav-menu {
   .toggle-btn {
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
     border: $border;
     border-width: 2px;
     border-radius: 50%;
@@ -90,11 +90,11 @@
   border-radius: 20rem;
 
   li {
-    padding: 1.2rem 0;
+    padding: .8rem 0;
 
     a {
       position: relative;
-      font-size: $font-lg;
+      font-size: $font-md;
       display: flex;
       align-items: center;
       justify-content: center;

@@ -166,7 +166,8 @@ section {
   color: $color-hilight;
   align-items: center;
   justify-content: center;
-  margin: 2rem;
+  margin: 3rem;
+  margin-top: 5rem;
   margin-left: auto;
 
   &-wrp {
@@ -190,5 +191,29 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: $font-lg;
+  }
+}
+
+
+
+.counter {
+  display: flex;
+  gap: 3rem;
+  margin-top: 5rem;
+
+  &-item{
+    max-width: 10rem;
+    
+    p {
+      line-height: 2.5rem;
+      text-transform: uppercase;
+      padding-top: 1rem;
+    }
+  }
+
+  strong {
+    color: $color-secondary;
+    font-size: 6.4rem;
+    font-weight: 400;
   }
 }
