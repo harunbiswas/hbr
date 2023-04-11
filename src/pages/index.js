@@ -5,6 +5,7 @@ import { BiHome } from "react-icons/bi";
 import Instraction from "@/components/section/Instraction";
 import About from "../components/section/About";
 import Resume from "@/components/section/Resume";
+import Services from "@/components/section/Services";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Instraction />
         <About />
         <Resume />
+        <Services />
       </main>
     </>
   );
