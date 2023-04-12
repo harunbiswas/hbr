@@ -6,6 +6,10 @@
   background-color: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   font-size: 10px;
@@ -195,16 +199,14 @@ section {
   }
 }
 
-
-
 .counter {
   display: flex;
   gap: 3rem;
   margin-top: 5rem;
 
-  &-item{
+  &-item {
     max-width: 10rem;
-    
+
     p {
       line-height: 2.5rem;
       text-transform: uppercase;
@@ -219,12 +221,11 @@ section {
   }
 }
 
-
 .title-main {
   font-size: 6.4rem;
   font-weight: 400;
   padding-bottom: 3rem;
-  
+
   span {
     color: $color-secondary;
     font-size: 6.4rem;

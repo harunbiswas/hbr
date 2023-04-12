@@ -27,7 +27,7 @@ export default function RotedBtn() {
   }, [text, rotate]);
 
   return (
-    <Link href="#portfolio" className="roted-btn">
+    <Link href="#portfolios" className="roted-btn">
       <div ref={ref} className="roted-btn-wrp">
         {text.map((t, i) => (
           <span key={i} className="text">

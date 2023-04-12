@@ -12,6 +12,8 @@
 /.next/
 /out/
 
+/hbr
+
 # production
 /build
 

@@ -2,50 +2,50 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { BiHome } from "react-icons/bi";
 import { BsChatSquareDots, BsFillPersonFill } from "react-icons/bs";
+import { FaBlog } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import {
   MdElectricalServices,
   MdOutlineAutoAwesomeMosaic,
-  MdOutlineContactPhone,
 } from "react-icons/md";
 
 export const items = [
   {
     text: "Home",
     icon: <BiHome />,
-    url: "/",
+    url: "#introduce",
   },
 
   {
     text: "About",
     icon: <BsFillPersonFill />,
-    url: "/",
+    url: "#about",
   },
   {
     text: "resume",
     icon: <HiOutlineDocumentText />,
-    url: "/",
+    url: "#resume",
   },
   {
     text: "services",
     icon: <MdElectricalServices />,
-    url: "/",
+    url: "#services",
   },
   {
     text: "Skills",
     icon: <GiSkills />,
-    url: "/",
+    url: "#skills",
   },
   {
     text: "Portfolios",
     icon: <MdOutlineAutoAwesomeMosaic />,
-    url: "/",
+    url: "#portfolios",
   },
   {
-    text: "Contracts",
-    icon: <MdOutlineContactPhone />,
-    url: "/",
+    text: "Blogs",
+    icon: <FaBlog />,
+    url: "#blogs",
   },
   {
     text: "Live Chat",

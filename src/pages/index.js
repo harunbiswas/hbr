@@ -1,4 +1,6 @@
+import Blogs from "@/components/section/Blogs";
 import Instraction from "@/components/section/Instraction";
+import Projects from "@/components/section/Projects";
 import Resume from "@/components/section/Resume";
 import Services from "@/components/section/Services";
 import Skills from "@/components/section/Skills";
@@ -13,6 +15,8 @@ export default function Home() {
         <Resume />
         <Services />
         <Skills />
+        <Projects />
+        <Blogs />
       </main>
     </>
   );
