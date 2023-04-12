@@ -20,7 +20,82 @@
   //#### about section #####
   .about {
     margin-top: 4rem;
+  }
+}
 
-    
+.services {
+  &-wrp {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .service {
+    border: $border;
+    padding: 5rem;
+    border-radius: 2rem;
+    position: relative;
+    transition: 0.4s;
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 5rem;
+      font-size: 4rem;
+      color: $color-secondary;
+    }
+
+    p {
+      padding-top: 1rem;
+    }
+
+    button {
+      border: none;
+      padding-top: 3rem;
+      color: $color-hilight;
+      font-size: 1.2rem;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    &:hover {
+      border-color: $color-secondary;
+
+      button {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.skills {
+  &-wrp {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .skill {
+      border: 2px solid $color-border;
+      height: 20rem;
+      width: 15rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 10rem;
+      gap: 2rem;
+      transition: 0.4s;
+
+      &:hover {
+        border-color: $color-secondary;
+      }
+
+      strong {
+        color: $color-secondary;
+        font-size: 3.4rem;
+      }
+    }
   }
 }

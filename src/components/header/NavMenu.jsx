@@ -5,9 +5,9 @@ import { BsChatSquareDots, BsFillPersonFill } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import {
+  MdElectricalServices,
   MdOutlineAutoAwesomeMosaic,
   MdOutlineContactPhone,
-  MdOutlineHomeRepairService,
 } from "react-icons/md";
 
 export const items = [
@@ -29,7 +29,7 @@ export const items = [
   },
   {
     text: "services",
-    icon: <MdOutlineHomeRepairService />,
+    icon: <MdElectricalServices />,
     url: "/",
   },
   {

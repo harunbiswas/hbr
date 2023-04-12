@@ -19,7 +19,6 @@ export default function RotedBtn() {
     const intervalId = setInterval(() => {
       ref.current.style.transform = `rotate(${rotate}deg)`;
       setRotate(rotate + 0.3);
-      console.log(rotate);
     }, 1);
 
     return () => {
