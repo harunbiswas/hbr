@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { BiHome } from "react-icons/bi";
+import { BiDollar, BiHome } from "react-icons/bi";
 import { BsChatSquareDots, BsFillPersonFill } from "react-icons/bs";
 import { FaBlog } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
@@ -41,6 +41,11 @@ export const items = [
     text: "Portfolios",
     icon: <MdOutlineAutoAwesomeMosaic />,
     url: "#portfolios",
+  },
+  {
+    text: "Offers",
+    icon: <BiDollar />,
+    url: "#pricing",
   },
   {
     text: "Blogs",

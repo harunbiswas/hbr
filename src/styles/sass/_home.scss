@@ -166,3 +166,104 @@
     }
   }
 }
+
+.blogs {
+  &-wrp {
+    column-count: 2;
+    column-gap: 2rem;
+
+    .blog-card {
+      overflow: hidden;
+      margin-bottom: 2rem;
+
+      a {
+        padding-top: 1rem;
+        display: block;
+        transition: 0.4s;
+
+        h1 {
+          font-size: $font-lg;
+        }
+      }
+
+      &:hover {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.pricing {
+  &-wrp {
+    display: flex;
+    gap: 5rem;
+
+    .pricing-card {
+      border: $border;
+      text-align: center;
+      padding: 4rem 3rem 12rem;
+      border-radius: 2rem;
+      transition: 0.4s;
+      position: relative;
+
+      &:hover {
+        border-color: $color-secondary;
+      }
+
+      &-header {
+        border-bottom: $border;
+        padding-bottom: 3rem;
+
+        .top {
+          display: flex;
+          justify-content: space-between;
+          gap: 5rem;
+          padding-bottom: 2rem;
+
+          span {
+            text-align: right;
+            font-size: $font-xs;
+          }
+
+          strong {
+            color: $color-hilight;
+            text-transform: uppercase;
+          }
+        }
+
+        .bottom {
+          span {
+            font-size: $font-lg;
+            text-align: left;
+            display: block;
+
+            strong {
+              font-size: $font-xl;
+              color: $color-secondary;
+            }
+          }
+        }
+      }
+
+      &-body {
+        padding-top: 3rem;
+        text-align: left;
+
+        span {
+          font-size: $font-xs;
+          line-height: 3rem;
+        }
+      }
+
+      button {
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30rem;
+      }
+    }
+  }
+}
