@@ -13,6 +13,7 @@ html {
 html,
 body {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
@@ -140,6 +141,15 @@ section {
 #__next {
   max-width: 840px;
   margin-left: 30rem;
+
+  @media screen and (max-width: 1366px) {
+    margin-left: 13rem;
+  }
+
+  @media screen and (max-width: $md) {
+    width: unset;
+    margin: 2rem;
+  }
 }
 
 .title {
@@ -226,8 +236,16 @@ section {
   font-weight: 400;
   padding-bottom: 3rem;
 
+  @media screen and (max-width: $sm) {
+    font-size: 4.2rem;
+  }
+
   span {
     color: $color-secondary;
     font-size: 6.4rem;
+
+    @media screen and (max-width: $sm) {
+      font-size: 4.2rem;
+    }
   }
 }

@@ -10,6 +10,14 @@
   top: 50%;
   transform: translateY(-50%);
 
+  @media screen and (max-width: $lg) {
+    position: unset;
+    transform: translateY(0);
+    width: 100%;
+    background-color: transparent;
+    border: none;
+  }
+
   .brand {
     display: flex;
     align-items: center;
@@ -33,6 +41,10 @@
   .image {
     height: 29rem;
     margin: 3rem 0;
+
+    @media screen and (max-width: $lg) {
+      height: auto;
+    }
 
     img {
       border-radius: 5rem;

@@ -4,10 +4,18 @@
       font-size: 7.8rem;
       font-weight: 400;
 
+      @media screen and (max-width: $sm) {
+        font-size: 4.6rem;
+      }
+
       span {
         font-size: 7.8rem;
         color: $color-secondary;
         font-weight: 600;
+
+        @media screen and (max-width: $sm) {
+          font-size: 4.6rem;
+        }
       }
     }
 
@@ -15,11 +23,6 @@
       padding: 2rem 0;
       line-height: 3rem;
     }
-  }
-
-  //#### about section #####
-  .about {
-    margin-top: 4rem;
   }
 }
 
@@ -76,6 +79,14 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @media screen and (max-width: $md) {
+      grid-template-columns: auto auto auto;
+    }
+
+    @media screen and (max-width: $sm) {
+      grid-template-columns: auto auto;
+    }
+
     .skill {
       border: 2px solid $color-border;
       height: 20rem;
@@ -111,6 +122,10 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 2rem;
+
+    @media screen and (max-width: $sm) {
+      grid-template-columns: auto;
+    }
   }
   .portfolio {
     width: 100%;
@@ -171,6 +186,9 @@
   &-wrp {
     column-count: 2;
     column-gap: 2rem;
+    @media screen and (max-width: $sm) {
+      column-count: 1;
+    }
 
     .blog-card {
       overflow: hidden;
@@ -199,6 +217,10 @@
   &-wrp {
     display: flex;
     gap: 5rem;
+
+    @media screen and (max-width: $sm) {
+      flex-direction: column;
+    }
 
     .pricing-card {
       border: $border;

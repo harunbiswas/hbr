@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { BiDollar, BiHome } from "react-icons/bi";
 import { BsChatSquareDots, BsFillPersonFill } from "react-icons/bs";
 import { FaBlog } from "react-icons/fa";
@@ -9,6 +9,7 @@ import {
   MdElectricalServices,
   MdOutlineAutoAwesomeMosaic,
 } from "react-icons/md";
+import ThemeContext from "../context/ThemeContext";
 
 export const items = [
   {
@@ -66,6 +67,8 @@ export default function NavMenu() {
     setIsToggle(!isToggle);
   };
 
+  const { secId } = useContext(ThemeContext);
+
   useEffect(() => {
     if (isToggle) {
       document.addEventListener("click", (e) => {
@@ -75,6 +78,10 @@ export default function NavMenu() {
       });
     }
   });
+
+  const handler = () => {
+    setIsToggle(false);
+  };
 
   return (
     <nav ref={ref} className="nav-menu">
@@ -88,7 +95,13 @@ export default function NavMenu() {
 
         {items.map((item, i) => (
           <li key={i} className="main-menu-item">
-            <Link className="" href={item.url}>
+            <Link
+              className={
+                (secId === item.url.replace("#", "") && "active") || ""
+              }
+              onClick={handler}
+              href={item.url}
+            >
               {item.icon}
               {item.text}
             </Link>

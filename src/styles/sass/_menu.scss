@@ -18,6 +18,12 @@
     top: 5rem;
     left: 3rem;
 
+    @media screen and (max-width: $md) {
+      top: 1rem;
+      right: 1rem;
+      left: unset;
+    }
+
     span {
       width: 60%;
       height: 4px;
@@ -89,8 +95,12 @@
   background-color: rgba($color: $color-hide, $alpha: 0.3);
   border-radius: 20rem;
 
+  @media screen and (max-width: $md) {
+    display: none;
+  }
+
   li {
-    padding: .8rem 0;
+    padding: 0.8rem 0;
 
     a {
       position: relative;
